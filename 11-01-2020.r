@@ -1,4 +1,5 @@
 library(tidyverse)
+library(rKenyaCensus)
 
 internetusage <- rKenyaCensus::V4_T2.35 %>%
   filter(Age != c('Total')) %>%
